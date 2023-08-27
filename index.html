@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dice</title>
+</head>
+
+<body>
+    <img src="maindice.png" alt="" id="dice">
+    <button type="button" onclick="rollnow()">Roll Now</button>
+    <script>
+        const dice = document.getElementById("dice");
+        function rollnow() {
+           
+            const value = Math.floor(Math.random() *6) + 1;
+            switch (value){
+                case 1: dice.src="dice1.png";
+                break;
+                case 2: dice.src="dice2.png";
+                break;
+                case 3: dice.src="dice3.png";
+                break;
+                case 4: dice.src="dice4.png";
+                break;
+                case 5: dice.src="dice5.png";
+                break;
+                case 6: dice.src="dice6.png";
+                break;
+
+            }
+           
+        }
+    </script>
+</body>
+
+</html>
